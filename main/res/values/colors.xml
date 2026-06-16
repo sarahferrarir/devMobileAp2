@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="ibmec_blue">#002B6B</color>
+    <color name="ibmec_blue_dark">#001F52</color>
+
+    <color name="ibmec_yellow">#F5B400</color>
+
+    <color name="ibmec_background">#F5F5F5</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="text_primary">#222222</color>
+    <color name="text_secondary">#666666</color>
+
+    <color name="status_verde">#2E7D32</color>
+    <color name="status_vermelho">#C62828</color>
+
+    <color name="status_green_bg">#E8F5E9</color>
+    <color name="status_green_text">#2E7D32</color>
+
+    <color name="status_yellow_bg">#FFF8E1</color>
+    <color name="status_yellow_text">#F57F17</color>
+
+    <color name="status_red_bg">#FFEBEE</color>
+    <color name="status_red_text">#C62828</color>
+
+    <color name="status_amarelo">#F5B400</color>
+    <color name="button_outline_border">#002B6B</color>
+
+</resources>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ibmec_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="vertical"
+            android:background="@color/ibmec_blue"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:paddingTop="52dp"
+            android:paddingBottom="20dp"
+            android:gravity="bottom">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registro de Presença"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_aula"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/txtDisciplinaRegistro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disciplina"
+                    android:textColor="@color/text_primary"
+                    android:textSize="22sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtProfessorRegistro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Professor"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="16sp"
+                    android:layout_marginTop="12dp"/>
+
+                <TextView
+                    android:id="@+id/txtSalaRegistro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sala"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="16sp"
+                    android:layout_marginTop="6dp"/>
+
+                <TextView
+                    android:id="@+id/txtTurmaRegistro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Turma"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="16sp"
+                    android:layout_marginTop="6dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status da presença"
+                android:textColor="@color/text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="12dp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioPresente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Presente"
+                    android:textSize="16sp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioAusenteJustificada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ausente com justificativa"
+                    android:textSize="16sp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioAusenteSemJustificativa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ausente sem justificativa"
+                    android:textSize="16sp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Observação"
+                android:textColor="@color/text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="28dp" />
+
+            <EditText
+                android:id="@+id/editObservacao"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:hint="Digite uma observação, se necessário"
+                android:gravity="top"
+                android:padding="14dp"
+                android:background="@color/white"
+                android:layout_marginTop="12dp"/>
+
+            <Button
+                android:id="@+id/btnSalvarRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:text="Salvar Registro"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:backgroundTint="@color/ibmec_blue"
+                android:layout_marginTop="32dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

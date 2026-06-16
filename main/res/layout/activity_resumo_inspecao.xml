@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ibmec_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:background="@color/ibmec_blue"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:paddingTop="52dp"
+            android:paddingBottom="18dp"
+            android:gravity="bottom">
+
+            <TextView
+                android:id="@+id/txtTituloResumo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resumo da Inspeção"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtStatusInspecao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="● Em andamento"
+                android:textColor="@color/status_amarelo"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_aula"
+                android:orientation="vertical"
+                android:padding="22dp">
+
+                <TextView
+                    android:id="@+id/txtResumoContexto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sexta • Tarde\n2026-05-08\nInspetor: Inspetor 1"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="15sp"
+                    android:lineSpacingExtra="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Taxa de faltas"
+                    android:textColor="@color/text_primary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="24dp" />
+
+                <TextView
+                    android:id="@+id/txtTaxaFaltas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0,00%"
+                    android:textColor="@color/ibmec_blue"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:id="@+id/txtMetricasResumo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="✓ Presentes: 0\n⚠ Ausentes justificadas: 0\n✕ Ausentes sem justificativa: 0"
+                    android:textColor="@color/text_primary"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="7dp"
+                    android:layout_marginTop="22dp" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/containerResumoFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp" />
+
+            <Button
+                android:id="@+id/btnFinalizar"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:text="Finalizar Inspeção"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:backgroundTint="@color/ibmec_blue"
+                android:layout_marginTop="28dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnVoltarHome"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Voltar para Home"
+                android:textColor="@color/ibmec_blue"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:background="@drawable/second_button"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
